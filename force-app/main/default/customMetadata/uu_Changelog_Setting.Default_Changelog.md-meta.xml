@@ -4,7 +4,7 @@
     <protected>false</protected>
     <values>
         <field>Change_Item_Icon_Default__c</field>
-        <value xsi:type="xsd:string">approval</value>
+        <value xsi:type="xsd:string">action:approval</value>
     </values>
     <values>
         <field>Change_Type_Icon_Map__c</field>

@@ -53,11 +53,6 @@ export default class UuSalesforceChangelogItems extends LightningModal {
     wiredChangelogs({ error, data }) {
         console.log('executing function...');
         if (data) {
-            console.log('keys --> ' + Object.keys(JSON.parse(data)));
-            console.log('values --> ' + JSON.stringify(Object.values(JSON.parse(data))));
-            console.log('data --> ' + data);
-            console.log('JSON.parse(data) --> ' + JSON.parse(data));
-            console.log('stingified data --> ' + JSON.stringify(data));
             this.data = JSON.parse(data);
             this.error = undefined;
             this.loaded = true;

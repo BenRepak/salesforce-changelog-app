@@ -63,7 +63,7 @@ export default class UuSalesforceChangelog extends LightningElement   {
     loaded = false;
 
     /** @description used to refresh cached component (https://developer.salesforce.com/docs/platform/lwc/guide/apex-result-caching.html)
-     * @type {boolean}
+     * @type {string}
      */
     wiredDisplayNewItemsResults;
 
@@ -90,7 +90,7 @@ export default class UuSalesforceChangelog extends LightningElement   {
      */
     @wire(displayNewChangelogItems, {settingApiName : '$settingName'})
     wiredDisplayNewItems( result ) {
-        this.wiredDisplayNewItemsResults = result.data;
+        this.wiredDisplayNewItemsResults = result;
         if(result.data !== undefined) {
             this.hasData = true;
             this.displayNewCard = result.data;

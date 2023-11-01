@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>ChangelogController</members>
@@ -10,7 +10,6 @@
     </types>
     <types>
         <members>uu_Changelog_Setting.Default_Changelog</members>
-        <members>uu_Changelog_Setting.Unite_Changelog</members>
         <name>CustomMetadata</name>
     </types>
     <types>
