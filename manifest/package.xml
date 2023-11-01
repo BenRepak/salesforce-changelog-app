@@ -20,6 +20,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>uu_Changelog_Item__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>uu_Changelog_Item__c-Changelog Item Layout</members>
         <members>uu_Changelog_Setting__mdt-Changelog Setting Layout</members>
         <members>uu_Changelog_User_View__c-Changelog User View Layout</members>

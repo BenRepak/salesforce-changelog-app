@@ -23,7 +23,7 @@ Deploy the project to your target org using the following sfdx command.
 
 Be sure to replace **my-org** with the alias of your desired target org.
 ```
-sf project deploy start  --source-dir /force-app/main/default --target-org my-org
+sf project deploy start  --source-dir force-app/main/default --target-org my-org
 ```
 
 ### Step 4: Load Sample Data
@@ -31,7 +31,7 @@ Use the following sfdx command to load the sample dataset from the data director
 
 Be sure to replace **my-org** with the alias of your desired target org. 
 ```
-sf data import tree --files /data/uu_Changelog_Item__c.json --target-org my-org
+sf data import tree --files data/uu_Changelog_Item__c.json --target-org my-org
 ```
 
 ### Step 5: Assign Permission Sets
