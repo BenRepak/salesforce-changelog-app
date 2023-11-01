@@ -26,18 +26,18 @@ Be sure to replace **my-org** with the alias of your desired target org.
 sf project deploy start  --source-dir force-app/main/default --target-org my-org
 ```
 
-### Step 4: Load Sample Data
+### Step 4: Assign Permission Sets
+You can manually do this to desired users in your org. Or you can run the following command to assign the **Manage_Changelog_Items** permission set to the running user (aka, you).
+
+Be sure to replace **my-org** with the alias of your desired target org.
+
+### Step 5: Load Sample Data
 Use the following sfdx command to load the sample dataset from the data directory. 
 
 Be sure to replace **my-org** with the alias of your desired target org. 
 ```
 sf data import tree --files data/uu_Changelog_Item__c.json --target-org my-org
 ```
-
-### Step 5: Assign Permission Sets
-You can manually do this to desired users in your org. Or you can run the following command to assign the **Manage_Changelog_Items** permission set to the running user (aka, you).
-
-Be sure to replace **my-org** with the alias of your desired target org.
 
 ```
 sf org assign permset --name Manage_Changelog_Items --target-org my-org
