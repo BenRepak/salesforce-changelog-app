@@ -15,8 +15,6 @@ Learn more:
 
 ### Step 2: Clone Project Local Repository 
 ```
-mkdir sf-utah-changelog
-cd sf-utah-changelog
 git clone https://github.com/BenRepak/salesforce-changelog-app
 ```
 
