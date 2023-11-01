@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Default Changelog</label>
+    <protected>false</protected>
+    <values>
+        <field>Change_Item_Icon_Default__c</field>
+        <value xsi:type="xsd:string">approval</value>
+    </values>
+    <values>
+        <field>Change_Type_Icon_Map__c</field>
+        <value xsi:type="xsd:string">{
+&quot;Salesforce Release&quot;:&quot;action:apex&quot;,
+&quot;Bug Fix&quot;:&quot;action:bug&quot;,
+&quot;Feature Update&quot;:&quot;action:approval&quot;,
+&quot;New Feature&quot;:&quot;action:approval&quot;,
+&quot;Other&quot;:&quot;action:info&quot;
+}</value>
+    </values>
+    <values>
+        <field>Changelog_Modal_Body__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Changelog_Modal_Header__c</field>
+        <value xsi:type="xsd:string">Changelog</value>
+    </values>
+    <values>
+        <field>Component_Title__c</field>
+        <value xsi:type="xsd:string">Salesforce Changelog</value>
+    </values>
+    <values>
+        <field>Filter_Criteria__c</field>
+        <value xsi:type="xsd:string">Is_Published__c = &apos;Yes&apos; AND Change_Datetime__c = LAST_N_DAYS:30 AND Changelog_Audience__c INCLUDES (&apos;All&apos;)</value>
+    </values>
+    <values>
+        <field>New_Items_Icon__c</field>
+        <value xsi:type="xsd:string">utility:settings</value>
+    </values>
+    <values>
+        <field>New_Items_Message__c</field>
+        <value xsi:type="xsd:string">You are using an updated version of Salesforce. See what&apos;s new!</value>
+    </values>
+    <values>
+        <field>Read_Items_Message__c</field>
+        <value xsi:type="xsd:string">What&apos;s new in Salesforce?</value>
+    </values>
+</CustomMetadata>

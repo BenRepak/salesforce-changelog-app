@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Type_Icon_Map__c</fullName>
+    <description>Maps lightning-icons to Change Type field. Defaults to action:approval.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Change Type Icon Map</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>20</visibleLines>
+</CustomField>

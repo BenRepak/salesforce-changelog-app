@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ChangelogController</members>
+        <members>ChangelogController_TEST</members>
+        <members>ChangelogItem</members>
+        <members>ChangelogItemGroup</members>
+        <members>ChangelogSetting</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>uu_Changelog_Setting.Default_Changelog</members>
+        <members>uu_Changelog_Setting.Unite_Changelog</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>uu_Changelog_Item__c</members>
+        <members>uu_Changelog_Setting__mdt</members>
+        <members>uu_Changelog_User_View__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>uu_Changelog_Item__c-Changelog Item Layout</members>
+        <members>uu_Changelog_Setting__mdt-Changelog Setting Layout</members>
+        <members>uu_Changelog_User_View__c-Changelog User View Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>uuSalesforceChangelog</members>
+        <members>uuSalesforceChangelogItems</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Manage_Changelog_Items</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>59.0</version>
+</Package>

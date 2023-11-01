@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Items_Message__c</fullName>
+    <description>Displayed when no new changelog items were published since the user&apos;s last view</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Displayed when no new changelog items were published since the user&apos;s last view</inlineHelpText>
+    <label>Read Items Message</label>
+    <length>255</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

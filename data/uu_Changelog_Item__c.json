@@ -1,0 +1,76 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef1"
+            },
+            "Change_Datetime__c": "2023-10-31T15:00:00.000+0000",
+            "Change_Type__c": "Other",
+            "Documentation_Link__c": "https://utah.edu",
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "Four loko +1 gochujang yr migas, subway tile polaroid pinterest godard street art vice banjo whatever.",
+            "Title__c": "Boom goes the dynamite"
+        },
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef2"
+            },
+            "Change_Datetime__c": "2023-10-31T16:15:00.000+0000",
+            "Change_Type__c": "Feature Update",
+            "Documentation_Link__c": "https://utah.edu",
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "Pop-up copper mug tonx gastropub vegan scenester distillery tumblr readymade hexagon subway tile tattooed church-key skateboard hot chicken. JOMO etsy 3 wolf moon retro asymmetrical paleo yes plz. Meh coloring book activated charcoal, shaman raw denim vap",
+            "Title__c": "Yet again, we delier"
+        },
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef3"
+            },
+            "Change_Datetime__c": "2023-10-31T18:00:00.000+0000",
+            "Change_Type__c": "Bug Fix",
+            "Documentation_Link__c": "https://utah.edu",
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "Occupy bespoke letterpress copper mug cloud bread plaid neutral milk hotel af listicle sustainable",
+            "Title__c": "Another thing we did"
+        },
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef4"
+            },
+            "Change_Datetime__c": "2023-10-31T18:00:00.000+0000",
+            "Change_Type__c": "Bug Fix",
+            "Documentation_Link__c": "https://utah.edu",
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "I'm baby iceland heirloom mixtape cray dreamcatcher blue bottle pitchfork pug hammock. Hella ascot gentrify jawn poutine blue bottle try-hard umami dreamcatcher kickstarter pabst celiac pok pok DIY echo park.",
+            "Title__c": "Checkout this thing"
+        },
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef5"
+            },
+            "Change_Datetime__c": "2023-10-31T20:40:00.000+0000",
+            "Change_Type__c": "Salesforce Release",
+            "Documentation_Link__c": null,
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "Solarpunk squid austin Brooklyn dreamcatcher keffiyeh shaman kogi whatever normcore taxidermy. Locavore readymade organic fanny pack tofu, pickled pitchfork heirloom tonx yes plz cornhole.",
+            "Title__c": "Cats > Dogs"
+        },
+        {
+            "attributes": {
+                "type": "uu_Changelog_Item__c",
+                "referenceId": "uu_Changelog_Item__cRef6"
+            },
+            "Change_Datetime__c": "2023-10-31T22:55:00.000+0000",
+            "Change_Type__c": "New Feature",
+            "Documentation_Link__c": "https://utah.edu",
+            "Is_Published__c": "Yes",
+            "Short_Description__c": "Hot chicken forage health goth poke squid raw denim fashion axe DIY freegan. You probably haven't heard of them migas PBR&B offal, fingerstache flannel next level paleo portland four dollar toast XOXO narwhal craft beer solarpunk neutral milk hotel.",
+            "Title__c": "Hit after hit"
+        }
+    ]
+}

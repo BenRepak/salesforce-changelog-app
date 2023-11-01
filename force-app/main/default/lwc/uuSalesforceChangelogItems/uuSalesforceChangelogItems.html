@@ -1,0 +1,59 @@
+<!--
+ - Created by u0884669 on 9/18/2023.
+ -->
+
+<!-- Uu Salesforce Changelog Items -->
+<template>
+        <lightning-modal-header label={heading}></lightning-modal-header>
+        <template if:true={loaded}>
+            <lightning-modal-body> {content}
+                <div class="container">
+                    <template if:true={data}>
+                        <template for:each={data} for:item="logGroup">
+                            <div key={logGroup.changelogDate} class="slds-m-around_medium">
+                                <div class="slds-text-heading_medium">
+                                    <lightning-formatted-date-time year="numeric" month="long" day="2-digit" value={logGroup.changelogDate}></lightning-formatted-date-time>
+                                </div>
+                                <p class="slds-p-horizontal_small slds-m-around_medium">
+                                    <template for:each={logGroup.changelogItems} for:item="logItem">
+                                        <div key={logItem.changelogId} class="slds-m-around_medium">
+                                            <lightning-layout>
+                                                <lightning-layout-item padding="around-small">
+                                                    <lightning-icon
+                                                            icon-name={logItem.iconType}
+                                                            size="x-small"
+                                                            alternative-text={logItem.changeType}
+                                                            title={logItem.changeType}
+                                                            class="slds-m-right_x-small"
+                                                    >
+                                                    </lightning-icon>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item padding="around-small">
+                                                    {logItem.changelogShortDescription}
+                                                    <div if:true = {logItem.changelogDocumentLink} >
+                                                        <p class="slds-m-top_medium"><i>Learn more: <lightning-formatted-url value={logItem.changelogDocumentLink} tooltip={logItem.changelogDocumentLink} target="_blank"></lightning-formatted-url></i></p>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </lightning-layout>
+                                        </div>
+                                    </template>
+                                </p>
+                                <hr/>
+                            </div>
+                        </template>
+                    </template>
+                    <template if:false={data}>
+                        <p>No recent updates are available. Please check back later.</p>
+                    </template>
+                </div>
+
+            </lightning-modal-body>
+        </template>
+    <template if:false={loaded}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+
+    <lightning-modal-footer>
+            <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+        </lightning-modal-footer>
+</template>

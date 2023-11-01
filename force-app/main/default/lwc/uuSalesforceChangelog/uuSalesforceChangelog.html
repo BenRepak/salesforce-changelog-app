@@ -1,0 +1,36 @@
+<!-- UU Salesforce Changelog -->
+<template>
+    <!--    show after controller finishes-->
+    <template if:true={loaded}>
+        <!--        show only if changelog items exist-->
+        <template if:true={hasData}>
+            <!--            show if new changelog items exist for user-->
+            <template if:true={showNewCard}>
+                <lightning-card variant="narrow" title={jsonSettings.settingComponentTitle}
+                                icon-name={jsonSettings.settingNewItemsIcon}>
+                    <lightning-button label="View Updates" slot="actions" onclick={handleClick}></lightning-button>
+                    <div>
+                        <p class="slds-p-horizontal_small">{jsonSettings.settingNewItemsMessage}</p>
+                    </div>
+                </lightning-card>
+            </template>
+            <!--            show if no new changelog items exist for user-->
+            <template if:true={showReminderCard}>
+                <lightning-card variant="narrow">
+                    <p class="slds-p-horizontal_small">{jsonSettings.settingReadItemsMessage} View <lightning-button variant="base" label="recent updates" title="recent updates"
+                                          onclick={handleClick}></lightning-button>
+                        .
+                    </p>
+                </lightning-card>
+            </template>
+        </template>
+        <!--        show message if invalid custom metadata record is used-->
+        <template if:false={hasMetadata}>
+            <p>No custom metadata settings exist for this component. Please contact your System Administrator to report
+                this issue.</p>
+        </template>
+        <template if:true={error}>
+            <p>An error occurred: {error}</p>
+        </template>
+    </template>
+</template>
